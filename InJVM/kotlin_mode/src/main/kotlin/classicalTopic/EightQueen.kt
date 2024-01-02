@@ -26,7 +26,7 @@ class EightQueenByMe(
     ) {
         if (isConfirm(result, currentXAxis, currentYAxis)) return
         for (nextYAxis in 0 until size) {
-            val nextResult = result.toMutableList().apply { add(currentYAxis) }
+            val nextResult = result + currentYAxis
             if (nextResult.size >= size) {
                 results.add(nextResult)
                 return
