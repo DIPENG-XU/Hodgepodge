@@ -1,7 +1,9 @@
 # Hodgepodge
-Make things mysterious on purpose.
+- In English: Make things mysterious on purpose.
+- ~~In Mandarin: 故弄玄虚~~
+- ~~In Cantonese: 懒有文化~~
 
-## language
+## Program Language
 - Algorithm: Kotlin
 - Test some of the content provided by the JDK: Java
 
