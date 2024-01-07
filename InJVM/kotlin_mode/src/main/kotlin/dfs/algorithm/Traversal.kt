@@ -7,7 +7,7 @@ import tree.model.BinaryTree
 import kotlin.math.pow
 
 object Traversal {
-    fun generatedCompleteBinaryTree(): BinaryTree<String> {
+    fun generatedFullBinaryTree(): BinaryTree<String> {
         val n = 4
         val elementLenght = (2.0.pow(n) - 1).toInt()
         val binaryTreeList = mutableListOf<BinaryTree<String>>()
@@ -22,7 +22,7 @@ object Traversal {
             println(it)
         }
 
-        println("---Generated Binary Tree---")
+        println("---Generated Full Binary Tree---")
         println("------------------------------------------------------")
 
         return binaryTreeList.getOrNull(0) ?: throw Exception()
@@ -57,11 +57,11 @@ object Traversal {
 }
 
 fun main() {
-    val completeBinaryTree = Traversal.generatedCompleteBinaryTree()
+    val fullBinaryTree = Traversal.generatedFullBinaryTree()
     println("---PreOrder---")
-    println(preOrder(completeBinaryTree).map { it.value })
+    println(preOrder(fullBinaryTree).map { it.value })
     println("---MidOrder---")
-    println(midOrder(completeBinaryTree).map { it.value })
+    println(midOrder(fullBinaryTree).map { it.value })
     println("---PostOrder---")
-    println(postOrder(completeBinaryTree).map { it.value })
+    println(postOrder(fullBinaryTree).map { it.value })
 }
